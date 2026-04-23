@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoValuate - AI Price Intelligence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo" onclick="navTo('home')">Auto<span>Valuate</span><div class="pulse-dot"></div></div>
+    <div class="nav-links">
+      <a onclick="navTo('home')" id="link-home" class="active">Home</a>
+      <a onclick="navTo('buy')" id="link-buy">Buy</a>
+      <a onclick="navTo('sell')" id="link-sell">Sell</a>
+      <a onclick="navTo('how')" id="link-how">How It Works</a>
+    </div>
+    <a onclick="navTo('sell')" class="btn btn-primary">Sell My Car</a>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <div id="page-home" class="page active">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow mono">AI-Powered Price Intelligence</div>
+        <h1>Buy Smart.<br>Sell <span class="outline-text">Right.</span></h1>
+        <p>AI analyses thousands of real market transactions to give you the true value of any car — before you buy or list it.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="navTo('buy')">Browse Cars →</button>
+          <button class="btn btn-ghost" onclick="navTo('sell')">Predict My Car's Value</button>
+        </div>
+        <div class="stats-row">
+          <div class="stat">
+            <div class="val">98.2%</div>
+            <div class="label mono">ACCURACY</div>
+          </div>
+          <div class="stat">
+            <div class="val">50,000+</div>
+            <div class="label mono">CARS VALUED</div>
+          </div>
+          <div class="stat">
+            <div class="val">₹2.4L</div>
+            <div class="label mono">AVG SAVINGS</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="floating-card">
+          <div class="fc-image">
+            <svg width="120" height="40" viewBox="0 0 120 40" fill="none" stroke="var(--crimson2)" stroke-width="2">
+              <path d="M10,30 L20,30 C20,35 25,35 25,30 L75,30 C75,35 80,35 80,30 L110,30 L100,15 L70,10 L30,10 L15,15 Z"/>
+              <circle cx="22.5" cy="30" r="4"/>
+              <circle cx="77.5" cy="30" r="4"/>
+            </svg>
+            <div class="fc-badge">Great Deal ✓</div>
+          </div>
+          <div class="fc-brand mono">HONDA</div>
+          <div class="fc-name playfair">City 1.5 i-VTEC ZX</div>
+          <div class="fc-tags">
+            <span class="fc-tag">2019</span>
+            <span class="fc-tag">Petrol</span>
+            <span class="fc-tag">32,000 km</span>
+          </div>
+          <div class="fc-price-label mono">AI PREDICTED PRICE</div>
+          <div class="fc-price playfair">₹8.45 Lakhs</div>
+        </div>
+        <div class="info-chip chip-1">Confidence: <span class="val">94%</span></div>
+        <div class="info-chip chip-2">Saved: <span class="val">₹1.2L</span></div>
+      </div>
+    </section>
+
+
+
+    <section class="how-it-works">
+      <div class="mono" style="color:var(--crimson2); margin-bottom:1rem; font-size:0.8rem; letter-spacing:2px">PROCESS</div>
+      <h2 class="playfair">How AutoValuate Works</h2>
+      <div class="step-cards">
+        <div class="step-card">
+          <div class="step-num playfair">01</div>
+          <div class="step-icon">🔍</div>
+          <h3 class="playfair">Enter Car Details</h3>
+          <p>Provide basic details like brand, model, year, and kilometres driven. It takes less than 60 seconds.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num playfair">02</div>
+          <div class="step-icon">⚡</div>
+          <h3 class="playfair">AI Predicts Fair Price</h3>
+          <p>Our ML model analyses current market trends and depreciation to calculate the true value instantly.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="brands-ticker">
+      <div class="ticker-content">
+        <span>Maruti</span><span>Hyundai</span><span>Honda</span><span>Toyota</span><span>Tata</span><span>Mahindra</span><span>Kia</span><span>BMW</span><span>Mercedes</span><span>Audi</span><span>Volkswagen</span><span>Ford</span><span>Jaguar</span><span>Volvo</span>
+        <span>Maruti</span><span>Hyundai</span><span>Honda</span><span>Toyota</span><span>Tata</span><span>Mahindra</span><span>Kia</span><span>BMW</span><span>Mercedes</span><span>Audi</span><span>Volkswagen</span><span>Ford</span><span>Jaguar</span><span>Volvo</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS PAGE -->
+  <div id="page-how" class="page">
+
+
+    <section class="how-it-works">
+      <div class="mono" style="color:var(--crimson2); margin-bottom:1rem; font-size:0.8rem; letter-spacing:2px">PROCESS</div>
+      <h2 class="playfair">How AutoValuate Works</h2>
+      <div class="step-cards">
+        <div class="step-card">
+          <div class="step-num playfair">01</div>
+          <div class="step-icon">🔍</div>
+          <h3 class="playfair">Enter Car Details</h3>
+          <p>Provide basic details like brand, model, year, and kilometres driven. It takes less than 60 seconds.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num playfair">02</div>
+          <div class="step-icon">⚡</div>
+          <h3 class="playfair">AI Predicts Fair Price</h3>
+          <p>Our ML model analyses current market trends and depreciation to calculate the true value instantly.</p>
+        </div>
+      </div>
+      
+      <div style="max-width:800px; margin: 4rem auto 0; text-align:left; background:var(--bg2); padding:3rem; border-radius:1rem; border:1px solid var(--border);">
+        <h3 class="playfair" style="font-size:1.8rem; margin-bottom:1.5rem; color:var(--platinum);">The Intelligence Behind the Price</h3>
+        <p style="color:var(--text-dim); line-height:1.8; margin-bottom:1.5rem;">
+          AutoValuate isn't just a basic calculator. It's powered by an advanced <strong>Gradient Boosting Machine Learning Model</strong> trained on over 8,000 real-world used car transactions from the Indian market.
+        </p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-top:2rem;">
+          <div>
+            <h4 class="mono" style="color:var(--crimson2); margin-bottom:0.8rem; font-size:0.9rem;">1. Data Processing</h4>
+            <p style="color:var(--text-dim); font-size:0.9rem; line-height:1.6;">We normalize inputs taking into account engine CC, max power, mileage (kmpl), transmission type, and fuel type. Each feature is mathematically scaled to understand its true weight in the market.</p>
+          </div>
+          <div>
+            <h4 class="mono" style="color:var(--crimson2); margin-bottom:0.8rem; font-size:0.9rem;">2. Predictive Modelling</h4>
+            <p style="color:var(--text-dim); font-size:0.9rem; line-height:1.6;">Our XGBoost algorithm evaluates non-linear relationships—like how a luxury brand depreciates faster initially, but holds steady value after 5 years compared to budget brands.</p>
+          </div>
+          <div>
+            <h4 class="mono" style="color:var(--crimson2); margin-bottom:0.8rem; font-size:0.9rem;">3. Market Context</h4>
+            <p style="color:var(--text-dim); font-size:0.9rem; line-height:1.6;">We penalize multiple ownerships and high kilometer usage exactly as the market does, giving you a realistic selling or buying target instead of an optimistic guess.</p>
+          </div>
+          <div>
+            <h4 class="mono" style="color:var(--crimson2); margin-bottom:0.8rem; font-size:0.9rem;">4. Deal Verdicts</h4>
+            <p style="color:var(--text-dim); font-size:0.9rem; line-height:1.6;">By comparing the AI's fair value against a seller's asking price, we instantly tag listings as a <em>Great Deal</em>, <em>Fair Price</em>, or <em>Overpriced</em> to protect buyers from overpaying.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- BUY PAGE -->
+  <div id="page-buy" class="page">
+    <div class="buy-layout">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h3 class="mono">REFINE SEARCH</h3>
+          <button class="reset-btn" onclick="resetFilters()">Reset Filters</button>
+        </div>
+        
+        <div class="filter-group">
+          <label class="filter-label mono">BRAND</label>
+          <select class="form-select" id="filter-brand">
+            <option value="">All Brands</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="filter-label mono">FUEL TYPE</label>
+          <select class="form-select" id="filter-fuel">
+            <option value="">All Fuel Types</option>
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+            <option value="CNG">CNG</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="filter-label mono">TRANSMISSION</label>
+          <select class="form-select" id="filter-trans">
+            <option value="">All</option>
+            <option value="Manual">Manual</option>
+            <option value="Automatic">Automatic</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="filter-label mono">MAX KM DRIVEN</label>
+          <input type="range" class="range-slider" id="filter-km" min="0" max="200000" step="5000" value="200000" oninput="document.getElementById('km-val').innerText = this.value + ' km'">
+          <span class="range-val" id="km-val">200000 km</span>
+        </div>
+        <div class="filter-group">
+          <label class="filter-label mono">MAX PRICE (Lakhs)</label>
+          <input type="range" class="range-slider" id="filter-price" min="1" max="100" step="1" value="100" oninput="document.getElementById('price-val').innerText = '₹' + this.value + ' L'">
+          <span class="range-val" id="price-val">₹100 L</span>
+        </div>
+        
+        <div class="filter-group">
+          <label class="filter-label mono">CONDITION</label>
+          <input type="range" class="range-slider" id="filter-condition" min="1" max="3" step="1" value="2" oninput="updateCondition(this.value, 'filter')">
+          <span class="range-val" id="filter-cond-val">Good</span>
+          <div id="filter-condition-car-anim" class="car-anim-container cond-good">
+            <!-- Smoke for Fair -->
+            <div class="anim-smoke anim-hidden">
+              <svg width="60" height="40" viewBox="0 0 60 40" fill="var(--text-muted)">
+                <circle cx="10" cy="30" r="4" class="smoke-puff smoke-1" />
+                <circle cx="20" cy="25" r="6" class="smoke-puff smoke-2" />
+                <circle cx="30" cy="20" r="8" class="smoke-puff smoke-3" />
+              </svg>
+            </div>
+            <!-- Speed lines for Excellent -->
+            <div class="anim-speed anim-hidden">
+              <svg width="60" height="40" viewBox="0 0 60 40" stroke="var(--teal)" stroke-width="2" stroke-linecap="round">
+                <line x1="10" y1="10" x2="50" y2="10" class="speed-line sl-1" />
+                <line x1="0" y1="20" x2="40" y2="20" class="speed-line sl-2" />
+                <line x1="20" y1="30" x2="60" y2="30" class="speed-line sl-3" />
+              </svg>
+            </div>
+            <!-- Main Car -->
+            <svg class="cond-car-svg" width="120" height="40" viewBox="0 0 120 40" fill="none" stroke="var(--platinum)" stroke-width="1.5">
+              <path d="M10,30 L20,30 C20,35 25,35 25,30 L75,30 C75,35 80,35 80,30 L110,30 L100,15 L70,10 L30,10 L15,15 Z"/>
+              <circle class="cond-car-wheel" cx="22.5" cy="30" r="4" transform-origin="22.5px 30px" />
+              <circle class="cond-car-wheel" cx="77.5" cy="30" r="4" transform-origin="77.5px 30px" />
+              <!-- Sparkle for Excellent -->
+              <path class="cond-sparkle anim-hidden" d="M 95 5 L 100 15 L 110 15 L 102 20 L 105 30 L 95 23 L 85 30 L 88 20 L 80 15 L 90 15 Z" fill="var(--teal)" stroke="none" />
+              <!-- Crack for Fair -->
+              <path class="cond-crack anim-hidden" d="M 40 15 L 45 22 L 42 28 M 70 10 L 65 18 M 20 30 L 25 28" stroke="var(--crimson)" stroke-width="1" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+        <button class="btn btn-primary" style="width:100%; margin-top:1rem" onclick="applyFilters()">Apply Filters</button>
+      </aside>
+
+      <main class="main-content">
+        <div class="page-header">
+          <h1 class="playfair">Browse Cars</h1>
+          <p>AI price tag shown on every listing — know if it's a fair deal.</p>
+          <hr>
+        </div>
+        <div class="sort-bar">
+          <div class="listing-count mono" id="listing-count">Showing 0 listings</div>
+          <div class="sort-options">
+            <button class="pill" onclick="sortListings('price-asc')">Price ↑</button>
+            <button class="pill" onclick="sortListings('price-desc')">Price ↓</button>
+            <button class="pill active" onclick="sortListings('deal')">Best Deal</button>
+          </div>
+        </div>
+        
+        <div class="car-grid" id="car-grid">
+          <!-- Populated by JS -->
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- SELL PAGE (WIZARD) -->
+  <div id="page-sell" class="page">
+    <div class="sell-layout">
+      
+      <div class="step-indicator">
+        <div class="step-dot-wrap active" id="dot-1">
+          <div class="step-dot">1</div>
+          <div class="step-label">Car Details</div>
+        </div>
+        <div class="step-dot-wrap" id="dot-2">
+          <div class="step-dot">2</div>
+          <div class="step-label">AI Valuation</div>
+        </div>
+      </div>
+
+      <!-- STEP 1: Details -->
+      <div id="wizard-1" class="wizard-step active">
+        <h2 class="playfair" style="margin-bottom:2rem">Enter Car Details</h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="filter-label mono">BRAND</label>
+            <select class="form-select" id="sell-brand">
+              <option value="Maruti">Maruti</option>
+              <option value="Hyundai">Hyundai</option>
+              <option value="Honda">Honda</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Tata">Tata</option>
+              <option value="Mahindra">Mahindra</option>
+              <option value="Ford">Ford</option>
+              <option value="Volkswagen">Volkswagen</option>
+              <option value="BMW">BMW</option>
+              <option value="Mercedes-Benz">Mercedes-Benz</option>
+              <option value="Audi">Audi</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="filter-label mono">MODEL NAME</label>
+            <input type="text" class="form-input" id="sell-model" placeholder="e.g. Swift Dzire VXI">
+          </div>
+          <div class="form-group">
+            <label class="filter-label mono">YEAR</label>
+            <input type="number" class="form-input" id="sell-year" min="2005" max="2024" value="2018">
+          </div>
+          <div class="form-group">
+            <label class="filter-label mono">FUEL TYPE</label>
+            <select class="form-select" id="sell-fuel">
+              <option value="Petrol">Petrol</option>
+              <option value="Diesel">Diesel</option>
+              <option value="CNG">CNG</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="filter-label mono">TRANSMISSION</label>
+            <select class="form-select" id="sell-trans">
+              <option value="Manual">Manual</option>
+              <option value="Automatic">Automatic</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="filter-label mono">NO. OF OWNERS</label>
+            <select class="form-select" id="sell-owner">
+              <option value="First Owner">First Owner</option>
+              <option value="Second Owner">Second Owner</option>
+              <option value="Third Owner">Third Owner</option>
+              <option value="Fourth & Above Owner">Fourth & Above Owner</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="filter-label mono">ENGINE CC</label>
+            <input type="number" class="form-input" id="sell-engine" value="1197">
+          </div>
+          <div class="form-group">
+            <label class="filter-label mono">MAX POWER (bhp)</label>
+            <input type="number" class="form-input" id="sell-power" value="82">
+          </div>
+          <div class="form-group">
+            <label class="filter-label mono">MILEAGE (kmpl)</label>
+            <input type="number" class="form-input" id="sell-mileage" value="21.5">
+          </div>
+          <div class="form-group">
+            <label class="filter-label mono">CITY</label>
+            <select class="form-select" id="sell-city">
+              <option>Mumbai</option>
+              <option>Delhi</option>
+              <option>Bangalore</option>
+              <option>Hyderabad</option>
+              <option>Ahmedabad</option>
+              <option>Chennai</option>
+              <option>Kolkata</option>
+              <option>Pune</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label class="filter-label mono">KM DRIVEN</label>
+            <input type="range" class="range-slider" id="sell-km" min="0" max="150000" step="1000" value="45000" oninput="document.getElementById('sell-km-val').innerText = this.value + ' km'">
+            <span class="range-val" id="sell-km-val">45000 km</span>
+          </div>
+          <div class="form-group full">
+            <label class="filter-label mono">CONDITION</label>
+            <input type="range" class="range-slider" id="sell-condition" min="1" max="3" step="1" value="2" oninput="updateCondition(this.value, 'sell')">
+            <span class="range-val" id="sell-cond-val">Good</span>
+            <div id="sell-condition-car-anim" class="car-anim-container cond-good">
+              <!-- Smoke for Fair -->
+              <div class="anim-smoke anim-hidden">
+                <svg width="60" height="40" viewBox="0 0 60 40" fill="var(--text-muted)">
+                  <circle cx="10" cy="30" r="4" class="smoke-puff smoke-1" />
+                  <circle cx="20" cy="25" r="6" class="smoke-puff smoke-2" />
+                  <circle cx="30" cy="20" r="8" class="smoke-puff smoke-3" />
+                </svg>
+              </div>
+              
+              <!-- Speed lines for Excellent -->
+              <div class="anim-speed anim-hidden">
+                <svg width="60" height="40" viewBox="0 0 60 40" stroke="var(--teal)" stroke-width="2" stroke-linecap="round">
+                  <line x1="10" y1="10" x2="50" y2="10" class="speed-line sl-1" />
+                  <line x1="0" y1="20" x2="40" y2="20" class="speed-line sl-2" />
+                  <line x1="20" y1="30" x2="60" y2="30" class="speed-line sl-3" />
+                </svg>
+              </div>
+              
+              <!-- Main Car -->
+              <svg class="cond-car-svg" width="120" height="40" viewBox="0 0 120 40" fill="none" stroke="var(--platinum)" stroke-width="1.5">
+                <path d="M10,30 L20,30 C20,35 25,35 25,30 L75,30 C75,35 80,35 80,30 L110,30 L100,15 L70,10 L30,10 L15,15 Z"/>
+                <circle class="cond-car-wheel" cx="22.5" cy="30" r="4" transform-origin="22.5px 30px" />
+                <circle class="cond-car-wheel" cx="77.5" cy="30" r="4" transform-origin="77.5px 30px" />
+                
+                <!-- Sparkle for Excellent -->
+                <path class="cond-sparkle anim-hidden" d="M 95 5 L 100 15 L 110 15 L 102 20 L 105 30 L 95 23 L 85 30 L 88 20 L 80 15 L 90 15 Z" fill="var(--teal)" stroke="none" />
+                
+                <!-- Crack for Fair -->
+                <path class="cond-crack anim-hidden" d="M 40 15 L 45 22 L 42 28 M 70 10 L 65 18 M 20 30 L 25 28" stroke="var(--crimson)" stroke-width="1" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label class="filter-label mono">UPLOAD PHOTOS</label>
+            <div id="drop-zone" onclick="document.getElementById('photo-input').click()" style="border:2px dashed var(--text-muted); padding:2rem; text-align:center; border-radius:0.5rem; color:var(--text-dim); cursor:pointer; transition: all 0.3s ease;">
+              <div style="font-size:2rem; margin-bottom:1rem">📷</div>
+              <div>Drop images here or click to browse</div>
+              <input type="file" id="photo-input" multiple accept="image/*" style="display:none" onchange="handleFiles(this.files)">
+            </div>
+            <div id="photo-preview" style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;"></div>
+          </div>
+        </div>
+        <button class="btn btn-primary" style="width:100%" onclick="goToStep(2)">Analyse My Car →</button>
+      </div>
+
+      <!-- STEP 2: AI Valuation -->
+      <div id="wizard-2" class="wizard-step">
+        <div id="loading" class="loading-screen">
+          <div class="spinner"></div>
+          <div class="loading-text mono" id="loading-text">Loading model...</div>
+        </div>
+        
+        <div id="results" style="display:none">
+          <div class="results-grid">
+            <div class="price-card">
+              <div class="est-label mono"><div class="pulse-dot"></div> ESTIMATED MARKET VALUE</div>
+              <div class="big-price playfair" id="res-price">₹-- L</div>
+              <div class="price-range" id="res-range">Range: ₹-- L - ₹-- L</div>
+              <div class="confidence mono" id="res-conf">Confidence: --%</div>
+              <div class="suggested">Suggested Listing: <strong style="color:var(--crimson2)" id="res-sugg">₹-- L</strong></div>
+            </div>
+            
+            <div class="factors-card">
+              <h3 class="playfair">What Affects Your Price</h3>
+              <div id="factors-container"></div>
+            </div>
+          </div>
+          
+          <div class="tips-panel">
+            <h4 class="mono">💡 Tips to Increase Value</h4>
+            <ul id="tips-list"></ul>
+          </div>
+          
+          <div class="wizard-actions">
+            <button class="btn btn-ghost" onclick="goToStep(1)">← Re-evaluate</button>
+            <button class="btn btn-primary" onclick="navTo('buy')">Browse Cars →</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(event)">×</button>
+      <div class="modal-hero">
+        <svg width="200" height="70" viewBox="0 0 120 40" fill="none" stroke="var(--platinum)" stroke-width="1.5">
+          <path d="M10,30 L20,30 C20,35 25,35 25,30 L75,30 C75,35 80,35 80,30 L110,30 L100,15 L70,10 L30,10 L15,15 Z"/>
+          <circle cx="22.5" cy="30" r="4"/>
+          <circle cx="77.5" cy="30" r="4"/>
+        </svg>
+      </div>
+      <div class="modal-body">
+        <div class="modal-header">
+          <div class="fc-brand mono" id="mod-brand">BRAND</div>
+          <h2 class="playfair" id="mod-title" style="font-size:2rem; margin-bottom:0.5rem">Model Name</h2>
+          <div class="modal-tags" id="mod-tags"></div>
+        </div>
+        
+        <div class="modal-grid">
+          <div class="seller-box">
+            <h4 class="mono" style="color:var(--text-dim); margin-bottom:1rem">PRICING</h4>
+            <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem">
+              <span>Listed Price</span>
+              <span class="mono" id="mod-list-price">₹--</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:1rem">
+              <span style="color:var(--crimson2)">AI Fair Value</span>
+              <strong class="mono" style="color:var(--crimson2)" id="mod-ai-price">₹--</strong>
+            </div>
+            <div class="deal-badge badge-fair" id="mod-verdict" style="position:static; text-align:center">Verdict</div>
+          </div>
+          
+          <div class="seller-box">
+            <h4 class="mono" style="color:var(--text-dim); margin-bottom:1rem">SELLER INFO</h4>
+            <div id="mod-seller-name" style="margin-bottom:0.5rem">--</div>
+            <div class="mono" id="mod-seller-phone" style="color:var(--crimson2); margin-bottom:0.5rem">--</div>
+            <div id="mod-seller-city" style="color:var(--text-dim); font-size:0.8rem">--</div>
+          </div>
+        </div>
+        
+        <p style="color:var(--platinum2); font-size:0.9rem; line-height:1.6" id="mod-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
