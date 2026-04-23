@@ -1,0 +1,25 @@
+[
+  {
+    "id": "AV-A6A76C22",
+    "brand": "Maruti",
+    "model": "swift",
+    "year": 2018,
+    "km_driven": 45000,
+    "fuel": "Petrol",
+    "transmission": "Manual",
+    "owner": "First Owner",
+    "mileage": 21.5,
+    "engine": 1197.0,
+    "max_power": 82.0,
+    "seats": 5,
+    "seller_type": "Individual",
+    "city": "Ahmedabad",
+    "condition": "Good",
+    "listing_price": 6.08,
+    "ai_price": 5.85,
+    "seller_name": "Mantra Patel",
+    "seller_phone": "+91 9955663322",
+    "description": "",
+    "deal_verdict": "Fair Price"
+  }
+]
