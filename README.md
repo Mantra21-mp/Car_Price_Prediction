@@ -381,7 +381,7 @@ MIT License — Free to use, modify, and distribute with attribution.
 
 <div align="center">
 
-**Built with ❤️ by Mantra Patel**
+**Built with ❤️ by Mantra Patel and Team **
 
 ⭐ Star this repo if you found it useful!
 
